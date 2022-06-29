@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "gallery4.jpg",
+        "nombre": "Leche de Almendras 1L",
+        "precio": 200,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "img": "147.jpg",
+        "nombre": "Hamburguesa de Lentejas",
+        "precio": 500,
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "img": "122.jpg",
+        "nombre": "Lemonies",
+        "precio": 500,
+        "cantidad": 4
+    },
+    {
+        "id": 4,
+        "img": "163.jpg",
+        "nombre": "Pancitos Saborizados",
+        "precio": 120,
+        "cantidad": 6
+    },
+    {
+        "id": 5,
+        "img": "gallery.jpg",
+        "nombre": "Pan lactal de mesa",
+        "precio": 120,
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "img": "gallery2.jpg",
+        "nombre": "Hummus",
+        "precio": 200,
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Vegan: Alimentos libres de crueldad</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="barra-nav">
+            <img class="logo-header" src="img/logo.png" alt="logo-header">
+            <img class="boton-cart" src="assets/bx-cart.svg" alt="boton-cart">
+            <p class="contador-productos-cart">0</p>
+            <img class="boton-menu" src="assets/menu.svg" alt="boton-menu">
+            
+        </div>
+        <nav id="navegation-bar" class="nav">
+            <div class="botones-nav">
+                <a class="boton-nav" href="#">Inicio</a>
+                <a class="boton-nav" href="#productos">Productos</a>
+                <a class="boton-nav" href="#">Delivery</a>
+                <a class="boton-nav" href="#">Contacto</a>
+            </div>
+
+            <div class="botones-redes-fixed">
+                <a class="boton-whastapp-fixed-link" href="#">
+                <img class="boton-whatsapp-fixed" src="assets/whatsapp.svg" alt=""></a>
+    
+                <a class="boton-whastapp-fixed-link" href="#">
+                <img class="boton-whatsapp-fixed" src="assets/bxl-facebook.svg" alt=""></a>
+    
+                <a class="boton-whastapp-fixed-link" href="#">
+                <img class="boton-whatsapp-fixed" src="assets/bxl-instagram.svg" alt=""></a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="banner">
+        <img class="bannerImg" src="img/147.jpg" alt="banner">
+    </div>
+
+    <main>
+
+        <section class="product-destac">
+            <h2 class="title-product-destac">¡Nuestros mejores productos!</h2>
+            <div class="contenedor-galeria">
+                <img class="img-galeria" src="img/gallery.jpg" alt="">
+                <img class="img-galeria" src="img/gallery2.jpg" alt="">
+                <img class="img-galeria" src="img/gallery3.jpg" alt="">
+                <img class="img-galeria" src="img/gallery4.jpg" alt="">
+                <img class="img-galeria" src="img/gallery5.jpg" alt="">
+                <img class="img-galeria" src="img/gallery6.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="pedidos">
+            <h2 class="title-pedidos">¿Cómo realizar tu pedido?</h2>
+            <div class="pasos-pedidos">
+                <div class="paso-pedidos">
+                    <img class="img-pasos-pedidos" src="assets/productos.svg" alt="">
+                    <p class="text-pasos-pedidos">1. Agregá tus productos al carrito.</p>
+                </div>
+                <div class="paso-pedidos">
+                    <img class="img-pasos-pedidos" src="assets/undraw_personal_file_-222-m.svg" alt="">
+                    <p class="text-pasos-pedidos">2. Completá el formulario de compra.</p>
+                </div>
+                <div class="paso-pedidos">
+                    <img class="img-pasos-pedidos" src="assets/undraw_online_payments_re_y8f2.svg" alt="">
+                    <p class="text-pasos-pedidos">3. Asegurá tu pedido con una seña mínima.</p>
+                </div>
+                <div class="paso-pedidos">
+                    <img class="img-pasos-pedidos" src="assets/chat.svg" alt="">
+                    <p class="text-pasos-pedidos">4. Nos pondremos en contacto con vos para acordar día y horario de entrega.</p>
+                </div>
+                <div class="paso-pedidos">
+                    <img class="img-pasos-pedidos" src="assets/delivery.svg" alt="">
+                    <p class="text-pasos-pedidos">5. Te lo enviamos a tu domicilio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="productos">
+            
+            <h2 class="title-productos">
+                Productos
+            </h2>
+
+            <div class="buscador-productos">
+
+                <div class="filtros">
+                    <p class="todas">Todas</p>
+                    <p class="dulces">Dulces</p>
+                    <p class="saladas">Saladas</p>
+                    <p class="bebidas">Bebidas</p>
+                </div>
+            </div>
+
+            <div class="cards"></div>
+
+        </section>
+
+        <section id="carrito" class="carrito">
+            <h2 class="title-carrito">Carrito</h2>
+            <p class="carrito-vacio">No agregaste ningún producto...</p>
+            <table class="tablaCarrito">
+                <tbody class="tbody">
+                </tbody>
+            </table>
+
+            <div class="footerCarrito">
+                <div class="totalCuentaCarrito">
+                    <h4 class="totalCarrito">Total: $ 0 + ENVÍO</h4>
+                </div>
+                <div class="comprarCarrito">
+                    <img class="icon-delete" src="assets/delete.svg" alt="delete">
+                    <button class="botonComprarCarrito">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="comprar">
+            <h1 class="title-factura">Formulario de compra</h1>
+            <form action="#" name="formulario" class="formulario-de-compra">
+
+                    <div class="datos-usuario">
+
+                        <h3 class="title-date">Datos de contacto</h3>
+
+                        <label class="title-dato" for="nombre">Nombre*</label>
+                        <input class="input-form" type="text" id="nombre" name="nombre" required placeholder="Escribí tu nombre">
+
+                        <label class="title-dato" for="apellido">Apellido*</label>
+                        <input class="input-form" type="text" id="apellido" name="apellido" required placeholder=" Escribí tu apellido">
+
+                        <label class="title-dato" for="email">Email (Opcional)</label>
+                        <input class="input-form" type="email" id="email" name="email" placeholder="Escribí tu email">
+
+                        <label class="title-dato" for="cell">Número para comunicarnos*</label>
+                        <input class="input-form" id="cell" type="text" name="cell" required placeholder="Escribí tu número">
+
+                        <h3 class="title-date">Datos para envío</h3>
+
+                        <label class="title-dato" for="direccion">Dirección*</label>
+                        <input class="input-form" type="text" id="direccion" name="direccion" required placeholder="Escribí tu dirección">
+
+                        <label class="title-dato" for="localidad">Localidad*</label>
+                        <input class="input-form" type="text" id="localidad" name="localidad" required placeholder="Escribí el nombre de tu localidad">
+
+                        <label class="title-dato" for="comentario" id="comentario" name="comentario">¿Algo para agregar?
+                        </label>
+                        <textarea class="textarea" name="comentario" id="comentario" cols="47" rows="4"></textarea>                 
+                    </div>
+
+                    <div class="footer-form">
+                        <input class="boton-form-buy" value="Realizar compra">
+                        <input class="boton-form-cancel" value="Cancelar compra">
+                    </div>
+            </form>
+        </section>
+
+        <section class="alert-compra">
+            <div class="contenido-alert">
+                <h2 class="title-alert">¡Tus datos fueron cargados con éxito!</h2>
+                <div class="info-alert">
+                    <p class="parrafo-alert">Gracias por tu compra, en breve nos contactamos con vos.</p>
+                    <h4 class="title2-alert">Recordá que podes abonar de las siguientes maneras:</h4>
+                    <div class="parrafo2-alert">
+                        <p class="formasDePago">
+                            <img class="iconPay" src="assets/bxs-bank.svg" alt="">
+                            Transferencia
+                        </p>
+                        <p class="formasDePago">
+                            <img class="iconPay" src="assets/bxs-credit-card.svg" alt="">
+                            Débito/Crédito
+                        </p>
+                        <p class="formasDePago">
+                            <img class="iconPay" src="assets/bxl-bitcoin.svg" alt="">
+                            Criptomonedas
+                        </p>
+                    </div>
+                    <img src="assets/bx-x.svg" class="boton-close-alert" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="div-footer-long">
+            <h3 class="title-div-footer">Ubicación</h3>
+            <p>Isidro Casanova, GBA Zona Oeste.</p>
+        </div>
+    </footer>
+
+    <script src="/data/productos.json"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/compra.js"></script>
+    <script src="js/carritoboton.js"></script>
+    <script src="js/menu.js"></script>
+
+
+</body>
+</html>
